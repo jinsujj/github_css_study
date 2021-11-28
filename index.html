@@ -84,20 +84,20 @@
         <section class="section section--visual">
             <div class="inner">
                 <div class="summary">
-                    <div class="summary__title">
+                    <h2 class="summary__title">
                         How&nbsp;People build&nbsp;software
-                    </div>
-                    <div class="summary__description">
+                    </h2>
+                    <p class="summary__description">
                         Millions of developers and companies build, ship, and maintain their software on GitHub—the
                         largest and&nbsp;most advanced development platform in the world.
-                    </div>
+                    </p>
                 </div>
                 <form id="sign-form" method="POST" action="">
                     <ul>
                         <li><input type="text" class="input--text" placeholder="Pick a username"></li>
                         <li><input type="email" class="input--text" placeholder="your Email"></li>
                         <li>
-                            <input type="password" class="input--text">
+                            <input type="password" class="input--text" placeholder="Create a password">
                             <p class="caption">Use at least on Letter</p>
                         </li>
                         <li>
@@ -107,9 +107,90 @@
                     </ul>
                 </form>
             </div>
+        </section>
 
+        <!-- FEATURE -->
+        <section class="section section--feature">
+            <div class="summary">
+                <h2 class="summary__title">
+                    Welcome home, developers
+                </h2>
+                <p class="summary__description">
+                    Github for employees process that lets you work in your own or with others.
+                </p>
+            </div>
+            <div class="video">
+                <div class="video-ratio">
+                    <iframe width="694" height="390" src="https://www.youtube.com/embed/3iM_06QeZi8?list=RD3iM_06QeZi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="tiles">
+                <div class="inner">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="img/feature-tile__build.png" alt="build">
+                            <h3>For everything you build</h3>
+                            <p>Host and manage your code on Github, you can keep your work private or share it with the world</p>
+                        </li>
+                        <li>
+                            <img src="img/feature-tile__platform.png" alt="platform">
+                            <h3>A better way to work</h3>
+                            <p>From hobbyists to professionals, github helps devlopers simplify the way they build software</p>
+                        </li>
+                        <li>
+                            <img src="img/feature-tile__projects.png" alt="projects">
+                            <h3>Millions of projects</h3>
+                            <p>Github is home to millions of open source projects, Try one out or get inspired to create your own</p>
+                        </li>
+                        <li>
+                            <img src="img/feature-tile__work.png" alt="work">
+                            <h3>One platform, from starts to finish</h3>
+                            <p>With hundrends of integrations, Github is flexible enough to be at the center of your development process</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where is -->
+        <section class="section section--where-is">
+            <div class="inner">
+                <div class="summary">
+                    <div class="summary__title">
+                        Where is GitHub?
+                    </div>
+                    <div class="summary__description">
+                        Github is where people build software. ans contribute to over 48 million projects
+                    </div>
+
+                    <div id="map"></div>
+                </div>
+            </div>
         </section>
     </div>
-</body>
+    <script>
+        function initMap(){
+            const myLatLng = {
+                lat: 37.782293,
+                lng: -122.391240
+            }
 
+            const map = new google.maps.Map(
+                document.getElementById('map'),
+                {
+                    center: myLatLng,
+                    scrollwheel: false,
+                    zoom: 18
+                }
+            );
+            const marker = new google.maps.Marker(
+                {
+                    position: myLatLng,
+                    map: map,
+                    title: 'Github'
+                });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+</body>
 </html>
