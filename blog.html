@@ -17,25 +17,27 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/owl.svg">
 
     <!-- css 호출할때 순서 중요 -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="body__container">
         <!-- HEADER -->
         <header class="section">
-            <div class="inner clearfix">
+            <div class="inner">
                 <div id="toggle-btn">Header Menu Toggle Button</div>
                 <div class="title-group">
                     <div class="logo">부엉이</div>
                     <a href="#">사심가득 블로그</a>
                 </div>
                 <div class="btn-group">
-                    <!-- [inline 요소 사이에는 띄어쓰기로 인식] -->
                     <a href="#" class="btn sign-in">Login</a>
                     <a href="#" class="btn sign-up">Register</a>
                 </div>
@@ -44,8 +46,60 @@
 
         <!-- VISUAL -->
         <section class="section section--visual">
-
+            <div class="inner">
+                <div class="summary">
+                    <h2 class="summary__title">Title</h2>
+                </div>
+                <div class="board clearfix">
+                    <div class="post_info float--right">
+                        <ul>
+                            <li>작성일</li>
+                            <li>2021.12.03</li>
+                        </ul>
+                        <ul>
+                            <li>조회수</li>
+                            <li>5621</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- PAGENATION -->
+        <section class="section section--pagination">
+            <div class="inner">
+                <ul>
+                    <li><a href="#" class="max_left">max_left</a></li>
+                    <li><a href="#" class="left">left</a></li>
+                    <li><a href="#" class="num">1</a></li>
+                    <li><a href="#" class="num">2</a></li>
+                    <li><a href="#" class="num index">3</a></li>
+                    <li><a href="#" class="num">4</a></li>
+                    <li><a href="#" class="num">5</a></li>
+                    <li><a href="#" class="right">right</a></li>
+                    <li><a href="#" class="max_right">max_rigt</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="section">
+            <div class="inner clearfix">
+                <div class="float--left">
+                    <h2>©copyright Sasim</h2> <br />
+                    <h3>Powered by .Net Core</h3>
+                </div>
+                <ul class="site-links float--right">
+                    <li><a href="#">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a></li>
+                    <li> <a href="#">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a></li>
+                </ul>
+            </div>
+    </div>
+    </footer>
     </div>
 </body>
 

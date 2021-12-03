@@ -46,7 +46,6 @@ a {
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
-    display: flex;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -73,6 +72,10 @@ header {
     border-bottom: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 5px rgba(0,0,0,0.15);
     background:#fff;
+}
+
+header .inner {
+    display: flex;
 }
 
 header #toggle-btn {
@@ -117,3 +120,155 @@ header .sign-in {
     margin-right: 5px;
 }
 
+
+
+/* VISUAL */
+.section--visual {
+    margin-top: 56px;
+}
+
+.section--visual .summary {
+    border-bottom: 2px solid #219653;
+    width: 100%;
+}
+
+.section--visual .summary__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    padding-bottom: 16px;
+}
+
+.section--visual .board {
+    height: 800px;
+}
+
+.section--visual .board .post_info{
+
+}
+
+.section--visual .board .post_info ul{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+
+.section--visual .board .post_info ul li:first-child{
+    float: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    margin-left: 5px;
+    padding-top:8px;
+}
+
+.section--visual .board .post_info ul li{
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    margin-left: 5px;
+    padding-top:8px;
+}
+
+/* PAGENATION */
+.section--pagination {
+    margin-top: 8px;
+    margin-bottom: 35px;
+}
+
+.section--pagination .inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section--pagination ul {
+    display: flex;
+}
+
+.section--pagination ul li {
+    display: flex;
+    float: left;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section--pagination ul a {
+    display: block;
+    align-items: center;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.section--pagination .max_left{
+    background: url("../img/chevrons-left.svg");
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;;
+}
+
+.section--pagination .left{
+    background: url("../img/chevron-left.svg");
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;;
+}
+
+.section--pagination .right{
+    background: url("../img/chevron-right.svg");
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;;
+}
+
+.section--pagination .max_right{
+    background: url("../img/chevrons-right.svg");
+    width: 24px;
+    height: 24px;
+    text-indent: -9999px;;
+}
+
+.section--pagination .num {
+    padding:5px;
+}
+
+.section--pagination .index{
+    color:#219653;
+    font-weight: 600;
+}
+
+
+/* FOOTER */
+
+footer {
+
+}
+
+footer .inner {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    background:#F5F5F5;
+}
+
+footer .site-links {
+    display: flex;
+}
+
+footer .site-links li {
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 10px;
+    color:black;
+    line-height: 30px;
+}
+
+footer .site-links li a {
+}
+
+footer .site-links li a:hover {
+    text-decoration: underline;
+}
