@@ -1,0 +1,119 @@
+/* COMMON */
+.body__container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    padding: 0 16px;
+
+    border: 1px solid #18a0fb;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color:#18a0fb;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #18a0fb;
+    color:#fff;
+}
+
+
+/* SECTION & INNER */
+.section {
+    position: relative;
+}
+
+.section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*  FLOAT CLEARFIX */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right{
+    float: right;
+}
+
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    background:#fff;
+}
+
+header #toggle-btn {
+    background: url("../img/toggle_blue.svg");
+    width: 28px;
+    height: 18px;
+    cursor:pointer;
+    text-indent: -9999px;
+    margin: 27px 0;
+}
+
+header .title-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .title-group .logo {
+    background: url("../img/owl.svg");
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-indent: -9999px;
+}
+
+header .title-group a {
+    display: block;
+    padding: 21.5px 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+header .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .sign-in {
+    margin-right: 5px;
+}
+
