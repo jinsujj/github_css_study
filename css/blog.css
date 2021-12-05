@@ -200,6 +200,10 @@ header .sign-in {
     cursor: pointer;
 }
 
+.sidebar .btn-group {
+    display: none;
+}
+
 .sidebar .visit--count{
     margin-top: 28px;
 }
